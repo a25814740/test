@@ -1,0 +1,683 @@
+/* ==========================================================================
+    clear
+ ========================================================================== */
+
+* {
+    outline: 0;
+    -webkit-font-smoothing: antialiased;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+.clear,
+.clearfix{
+    clear: both;
+}
+a, 
+a:hover, 
+a:active, 
+a:focus, 
+a:visited{
+    text-decoration: none;
+    outline: 0;
+    outline-offset: 0px;
+    color: #000;
+}
+/*a[href="javascript:void(0)"]{
+    cursor: text;
+}*/
+
+/* Remove tap highlight on iOS */
+button,
+input,
+select,
+textarea,
+a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    line-height: normal;
+    outline: 0;
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    nowhitespace: afterproperty;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    ;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+textarea.form-control{
+    resize: none;
+}
+figure,
+address {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ==========================================================================
+   html
+   ========================================================================== */
+html {
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    opacity: 0;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    transition: all 1s linear;
+}
+.wp{
+    overflow: hidden !important;
+    min-width: 320px ;
+}
+section{
+    margin: 0 auto;
+    background: transparent;
+}
+body, p, a, h1, h2, h3, h4, h5, h6, span, label, input, select, button, tr, th, td, .txt{
+    font-family: Arial, "微軟正黑體", "Heiti TC", "蘭亭黑-繁";
+    letter-spacing: 0px;
+}
+.html img,
+.maxpic img {
+    max-width: 100%;
+}
+.maxpic {
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+.textHidden{
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 0px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    width: 0px !important;
+    text-indent: 100%!important;
+    white-space: nowrap!important;
+}
+
+/* ==========================================================================
+        圖片
+========================================================================== */
+
+.jqimgFill {
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.jqimgFill > img,
+.jqimgFill-tc > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: none;
+    max-width: none;
+}
+
+.max-sm-size .jqimgFill.sm {
+    background: none!important;
+    height: auto!important;
+    width: 100%!important;
+}
+
+.max-sm-size .jqimgFill.sm img {
+    width: 100%!important;
+    height: auto!important;
+    display: block!important;
+}
+
+.max-xs-size .jqimgFill.xs {
+    background: none!important;
+    height: auto!important;
+    width: 100%!important;
+}
+
+.max-xs-size .jqimgFill.xs img {
+    width: 100%!important;
+    height: auto!important;
+    display: block!important;
+}
+
+
+/* ==========================================================================
+    public
+ ========================================================================== */
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden !important;
+    /*-webkit-text-size-adjust: none;*/
+    /*font-family: "微軟正黑體", "思源黑體 TWHK Normal", Verdana, Arial, serif, "新細明體-ExtB";*/
+    line-height: 1.7em;
+    font-size: 14px;
+}
+
+.max-sm-size body {
+    font-size: 13px;
+}
+
+.max-xs-size body {
+    font-size: 12px;
+}
+
+.overflow-sm {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.max-md-size .overflow-sm {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.overflow {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.max-md-size .overflow {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.pd0 {
+    padding: 0;
+}
+
+.col {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+hr {
+    border-top-style: none;
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+    clear: both;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    padding-top: 20px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+
+/*實線*/
+
+hr.line {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-bottom-color: #CCC;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+
+/*虛線*/
+
+hr.dashed {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: dashed;
+    border-left-style: none;
+    border-bottom-color: #CCC;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+
+/* ==========================================================================
+   Rows
+   ========================================================================== */
+
+.rows,
+ul.rows,
+ol.rows,
+dl.rows {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.rows .listItem,
+ul.rows > li,
+ol.rows > li,
+dl.rows > dt,
+dl.rows > dd {
+    margin: 0;
+    padding: 0;
+    display: block;
+    clear: both
+}
+
+
+/* ==========================================================================
+   Columns [float]
+   ========================================================================== */
+
+.columns,
+ul.columns,
+ol.columns,
+dl.columns {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.columns:after,
+ul.columns:after,
+ol.columns:after,
+dl.columns:after {
+    content: "";
+    clear: both;
+    width: 0;
+    height: 0;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.columns .list-item,
+ul.columns > li,
+ol.columns > li,
+dl.columns > dt,
+dl.columns > dd {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+
+/* ==========================================================================
+   Columns [inline]
+   ========================================================================== */
+
+.columns.inline,
+ul.columns.inline,
+ol.columns.inline,
+dl.columns.inline {
+    letter-spacing: -0.31em;
+}
+
+opera-hack:-o-prefocus,
+ul.columns.inline,
+ol.columns.inline,
+dl.columns.inline {
+    *word-spacing: -0.43em;
+}
+
+.columns.inline .listItem,
+ul.columns.inline > li,
+ol.columns.inline > li,
+dl.columns.inline > dt,
+dl.columns.inline > dd {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal
+}
+
+opera-hack:-o-prefocus,
+ul.columns.inline > li,
+ol.columns.inline > li,
+dl.columns.inline > dt dl.columns.inline > dd {
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+
+
+/* ==========================================================================
+    文字
+========================================================================== */
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #777;
+}
+
+time {
+    font-size: 10px;
+    color: #999;
+    margin: 0;
+    padding: 0;
+}
+
+address {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.more {
+    font-family: Verdana, sans-serif;
+}
+
+.red {
+    color: #FF7E7E;
+}
+
+
+/*備註文字*/
+
+.notes {
+    color: #999;
+    font-size: 12px;
+}
+
+.num {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+
+
+/*自動100%撐開*/
+
+.auto {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.auto .left {
+    float: left;
+}
+
+.auto .right {
+    overflow: hidden;
+    zoom: 1;
+}
+
+
+/*穿透*/
+
+.pointer {
+    pointer-events: none;
+}
+
+
+/*圓角*/
+
+.radius {
+    border-radius: 5px;
+}
+
+
+/*文字陰影*/
+
+.text-shadow {
+    text-shadow: 1px 1px 2px #777;
+}
+
+
+/*區塊陰影*/
+
+.box-shadow {
+    box-shadow: 0px 0px 5px #E3E3E3;
+}
+
+
+/*選取*/
+
+li:nth-child(1) {}
+
+li:first-child {}
+
+li:last-child {}
+
+li:nth-child(even) {}
+
+li:nth-child(odd) {}
+
+
+/*手指效果*/
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/*3角型*/
+
+[class^="caret-"]:after,
+[class*="caret-"]:after {
+    display: inline-block;
+    margin-left: 10px;
+    content: '';
+    border-width: 4px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.caret-t:after {
+    border-top-width: 0;
+    border-bottom-color: #000000;
+}
+
+.caret-b:after {
+    border-bottom-width: 0;
+    border-top-color: #000000;
+}
+
+.caret-r:after {
+    border-right-width: 0;
+    border-left-color: #000000;
+}
+
+.caret-l:after {
+    border-left-width: 0;
+    border-right-color: #000000;
+}
+
+
+/*顏色*/
+
+.rgba {
+    background-color: rgb(143, 83, 156);
+    filter: progid: DXImageTransform.Microsoft.Alpha(opacity=0);
+    background-color: rgba(143, 83, 156, 0);
+}
+
+
+/*去除div無物件的區塊不影響階層*/
+
+.pointer-events {
+    pointer-events: none;
+    /*外圍物件*/
+    pointer-events: auto;
+    /*外圍物件*/
+}
+
+
+/*ie9以上支援*/
+
+:root .root {}
+
+
+/*動畫*/
+
+.transition {
+    transition: background-color 1s, color 0.5s;
+    transition: transform 0.4s, background-color 1s;
+}
+
+.transition:hover {
+    transform: scale(1.1);
+}
+
+
+/*正中央*/
+
+.centert {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+}
+
+.vcenter{
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.hcenter{
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.centerh {
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+}
+.centerv {
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+}
+
+.max-sm-size .centert.no-sm {
+    left: inherit;
+    top: inherit;
+    bottom: inherit;
+    right: inherit;
+    transform: none;
+    -webkit-transform: none;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.middle {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.middle-inline {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}

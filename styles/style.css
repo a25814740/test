@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:700,400italic,400,300italic,300,700italic|Alegreya);
+
+@import "default.css";
+@import "animation.css";
+@import "fonts/style.css";
+@import "plugins.css";
+
+/* ==========================================================================
+    public
+ ========================================================================== */
+
+
+h2:before,
+.icon-home:after{
+	font-family: "icomoon";
+	content: "\e900";
+	font-size: 50px;
+	color: #FF0;
+}
